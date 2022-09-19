@@ -21,8 +21,8 @@ class ContactManager(models.Manager):
 		contact = Contact.objects.create(
 			name = postData['name'], 
 			email = postData['email'].lower(), 
-			subject = postData['name'], 
-            message = postData['name'],)
+			subject = postData['subject'], 
+            message = postData['message'],)
 		return contact
 
 class Contact(models.Model):
