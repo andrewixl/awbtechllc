@@ -24,9 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2b5nqexa^#8%prf21kgc$l1!(ah%45vyx(-&gxs$1o2^kvo=vj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['24.199.66.239', 'awbtech.org', 'www.awbtech.org', 'localhost']
+ALLOWED_HOSTS = ['24.199.66.239', 'awbtech.org', 'www.awbtech.org']
+
+# SITE_ID = 1
 
 # Application definition
 
@@ -38,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'django.contrib.sites',
+    # 'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
